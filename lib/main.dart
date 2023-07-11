@@ -37,7 +37,6 @@ class _WeatherAppState extends State<WeatherApp> {
 
       setState(() {
         icon_url = "http://openweathermap.org/img/w/";
-
         location = result['name'];
         temperature = (result['main']['temp']); //kelvin
         temperature = temperature - 273.15;
